@@ -1,5 +1,5 @@
 import json
-from serpapi.google_search import GoogleSearch
+from serpapi import GoogleSearch
 
 params = {
     "engine": "google_news",
