@@ -5,13 +5,11 @@ import HomePage from "./pages/HomePage";
 import LandingPage from "./pages/LandingPage";
 import CustomizeAvatar from "./pages/CustomizeAvatar"; // Import new page
 import AnchorPage from "./pages/AnchorPage";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/Contactus";
 
 export default function App() {
   return (
     <Router>
-      <div className="bg-gradient-to-r from-indigo-950 via-purple-950 to-fuchsia-950 min-h-screen text-white">
+      <div className="bg-[#1A1A1A] min-h-screen text-white">
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -19,9 +17,6 @@ export default function App() {
           <Route path="/demo/anchor" element={<AnchorPage/>} />
           <Route path="/demo/anchor/customize" element={<CustomizeAvatar />} />
         </Routes>
-        <AboutUs/>
-        <ContactUs/>
-        
       </div>
     </Router>
   );
